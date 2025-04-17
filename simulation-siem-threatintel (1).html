@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>SIEM Dashboard – Medios AG</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: #e5e5e5;
+      font-family: Consolas, monospace;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #282846;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid #444;
+    }
+    .log-container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .log-entry {
+      background-color: #2b2b40;
+      padding: 10px 20px;
+      margin-bottom: 8px;
+      border-left: 4px solid #ff5e5e;
+      font-size: 14px;
+      white-space: pre-wrap;
+    }
+    .highlight {
+      color: #ff6f61;
+    }
+    .timestamp {
+      color: #89caff;
+    }
+    .severity {
+      color: #ffda6b;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">🔐 SIEM Monitoring – Medios AG | Incident Timeline (Threat Intelligence)</div>
+  <div class="log-container">
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:10:21</span> – <span class="severity">ALERT</span>: User <span class="highlight">j.drexler</span> clicked on suspicious link in email: „Neue Homeoffice-Regelung – Bitte bestätigen“</div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:10:58</span> – <span class="severity">INFO</span>: User <span class="highlight">j.drexler</span> entered credentials on phishing domain: <span class="highlight">home-access.security-cloud.net</span></div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:11:37</span> – <span class="severity">WARNING</span>: Macro-enabled Word document executed with PID 4021</div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:12:04</span> – <span class="severity">ALERT</span>: Powershell execution observed from Word process</div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:12:41</span> – <span class="severity">CRITICAL</span>: C2 connection attempt to <span class="highlight">185.222.134.199</span> (Flagged by VirusTotal as C2 for <strong>ALPHV (BlackCat)</strong>)</div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:13:13</span> – <span class="severity">ALERT</span>: Scheduled task created: <span class="highlight">sys_backup_update.job</span></div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:13:45</span> – <span class="severity">ALERT</span>: Encryption process started on <span class="highlight">WS-DREXLER-07</span> (file extension: <span class="highlight">.encrypted</span>)</div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:14:30</span> – <span class="severity">CRITICAL</span>: Lateral movement attempt from <span class="highlight">WS-DREXLER-07</span> to <span class="highlight">FINANCE-01</span></div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:15:10</span> – <span class="severity">WARNING</span>: Proxy activity detected toward <span class="highlight">tor-node-7onion.net</span></div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:15:40</span> – <span class="severity">ALERT</span>: Ransom note <span class="highlight">READ_ME_NOW.txt</span> detected (reference: ALPHV/BlackCat variant)</div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:16:15</span> – <span class="severity">ALERT</span>: EDR blocked file encryption on <span class="highlight">HR-LAPTOP-3</span></div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:16:50</span> – <span class="severity">CRITICAL</span>: Encryption signature matched on 6 hosts – probable ransomware (ALPHV)</div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:17:30</span> – <span class="severity">ALERT</span>: Privilege escalation detected for service account <span class="highlight">svc-archive</span></div>
+    <div class="log-entry"><span class="timestamp">2025-04-11 09:18:12</span> – <span class="severity">CRITICAL</span>: Data exfiltration event – <strong>50 GB</strong> sent to <span class="highlight">anonfiles-temp.me</span> (known ALPHV drop site)</div>
+  </div>
+</body>
+</html>
